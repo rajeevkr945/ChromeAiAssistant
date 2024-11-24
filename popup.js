@@ -20,7 +20,7 @@ document.getElementById("processBtn").addEventListener("click", async () => {
   summaryDiv.textContent = "Processing...";
 
   const API_URL = "https://api.openai.com/v1/chat/completions";
-  const API_KEY = "";  // Replace with your actual API key
+  const API_KEY = "";  // cash koduth ulla GPT ile link vechal mathre work avu guys(Paid gpt keys only)
 
   try {
     const response = await fetch(API_URL, {
