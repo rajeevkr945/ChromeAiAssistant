@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ai Devtool</title>
+  <style>
+    body {
+      background-color: #2e2e2e;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      width: 200px; 
+      height: 550px; 
+      overflow: hidden; 
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    select, textarea, button {
+      width: 90%;  
+      margin: 15px 0;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #444;
+      border: 1px solid #666;
+      color: white;
+      border-radius: 5px;
+    }
+    select {
+      background-color: #555;
+    }
+    button {
+      background-color: #5c5c5c;
+      cursor: pointer;
+    }
+    textarea {
+      height: 300%;
+      resize: none;
+    }
+    .logo {
+      width: 50px;  
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+      color: #aaa;
+    }
+    .summary {
+      background-color: #333;
+      padding: 15px;
+      margin-top: 10px;
+      border-radius: 5px;
+      width: 90%;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="test.png" alt=" AI Logo">
+    <select id="actionSelect">
+      <option value="summarize">സാരാംശം</option>
+      <option value="grammar">വൃത്തിയാക്കുക</option>
+      <option value="composeEmail">Mail Ayakanam</option>
+    </select>
+    <textarea id="inputText" placeholder="Paste your content here..."></textarea>
+    <button id="processBtn">Process</button>
+    <div id="summary" class="summary"></div>
+    <div class="footer">
+      <p>Developed by Rajeev K R</p>
+      <p>Github: <a href="https://github.com/rajeevkr945">https://github.com/rajeevkr945</a></p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
